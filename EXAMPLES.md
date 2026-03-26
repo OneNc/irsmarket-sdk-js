@@ -16,7 +16,7 @@ Dokumentasi dan contoh terperinci penggunaan IRSMarket SDK.
 ### Setup Client
 
 ```javascript
-import { IRSMarketClient } from 'irsmarket-sdk';
+import { IRSMarketClient } from 'irsmarket-sdk-js';
 
 const client = new IRSMarketClient({
   apikey: process.env.IRS_API_KEY,
@@ -64,7 +64,7 @@ async function showBalance() {
 
 ```javascript
 import express from 'express';
-import { IRSMarketClient, WebhookHandler, createWebhookMiddleware } from 'irsmarket-sdk';
+import { IRSMarketClient, WebhookHandler, createWebhookMiddleware } from 'irsmarket-sdk-js';
 import dotenv from 'dotenv';
 
 dotenv.config();

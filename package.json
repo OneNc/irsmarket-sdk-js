@@ -1,5 +1,5 @@
 {
-    "name": "irsmarket-sdk",
+    "name": "irsmarket-sdk-js",
     "version": "1.0.0",
     "description": "Node.js SDK untuk integrasi API IRSMarket - Platform jual beli pulsa, kuota, voucher game, dan produk digital lainnya",
     "main": "dist/index.js",

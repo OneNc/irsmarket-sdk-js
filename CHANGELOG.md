@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Initial release of irsmarket-sdk
+- Initial release of irsmarket-sdk-js
 - Full TypeScript support with type definitions
 - **IRSMarketClient** class with core features:
   - Transaction via POST method

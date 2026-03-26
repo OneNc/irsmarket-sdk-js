@@ -1,6 +1,6 @@
 # IRSMarket SDK
 
-[![npm version](https://badge.fury.io/js/irsmarket-sdk.svg)](https://badge.fury.io/js/irsmarket-sdk)
+[![npm version](https://badge.fury.io/js/irsmarket-sdk-js.svg)](https://badge.fury.io/js/irsmarket-sdk-js)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Node.js SDK untuk integrasi API **IRSMarket** - Platform jual beli pulsa, kuota data, voucher game, e-money, PPOB, dan produk digital lainnya.
@@ -32,7 +32,7 @@ yarn add irsmarket-sdk
 ### 1. Initialize Client
 
 ```javascript
-import { IRSMarketClient } from 'irsmarket-sdk';
+import { IRSMarketClient } from 'irsmarket-sdk-js';
 
 const client = new IRSMarketClient({
   apikey: 'your_api_key_here',

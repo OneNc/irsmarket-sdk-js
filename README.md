@@ -29,7 +29,33 @@ yarn add irsmarket-sdk-js
 
 ## 🔑 Quick Start
 
-### 1. Initialize Client
+### 1. Setup Environment Variables
+
+Create `.env` file di root project:
+
+```bash
+# .env
+IRS_API_KEY=your_api_key_here
+IRS_API_SECRET=your_api_secret_here
+```
+
+### 2. Initialize Client
+
+```javascript
+import * as dotenv from 'dotenv';
+dotenv.config();
+
+import { IRSMarketClient } from 'irsmarket-sdk-js';
+
+const client = new IRSMarketClient({
+  apikey: process.env.IRS_API_KEY!,
+  apisecret: process.env.IRS_API_SECRET!,
+  baseURL: 'https://api.irsmarket.com/v1', // Optional
+  timeout: 30000 // Optional
+});
+```
+
+**Or hardcoded (NOT recommended for production):**
 
 ```javascript
 import { IRSMarketClient } from 'irsmarket-sdk-js';
@@ -42,7 +68,7 @@ const client = new IRSMarketClient({
 });
 ```
 
-### 2. Perform Transaction
+### 3. Perform Transaction
 
 ```javascript
 try {
@@ -64,7 +90,7 @@ try {
 }
 ```
 
-### 3. Check Balance
+### 4. Check Balance
 
 ```javascript
 const balance = await client.getBalance();
@@ -75,7 +101,7 @@ if (balance.success) {
 }
 ```
 
-### 4. Handle Webhooks
+### 5. Handle Webhooks
 
 ```javascript
 import { WebhookHandler, createWebhookMiddleware } from 'irsmarket-sdk-js';

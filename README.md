@@ -18,13 +18,13 @@ Node.js SDK untuk integrasi API **IRSMarket** - Platform jual beli pulsa, kuota 
 ## 📦 Installation
 
 ```bash
-npm install irsmarket-sdk
+npm install irsmarket-sdk-js
 ```
 
 atau dengan yarn:
 
 ```bash
-yarn add irsmarket-sdk
+yarn add irsmarket-sdk-js
 ```
 
 ## 🔑 Quick Start
@@ -78,7 +78,7 @@ if (balance.success) {
 ### 4. Handle Webhooks
 
 ```javascript
-import { WebhookHandler, createWebhookMiddleware } from 'irsmarket-sdk';
+import { WebhookHandler, createWebhookMiddleware } from 'irsmarket-sdk-js';
 import express from 'express';
 
 const app = express();
@@ -325,7 +325,7 @@ const response = await client.transaction(
 Alih-alih menggunakan `apisecret` dalam request, Anda bisa menggunakan `sign`:
 
 ```javascript
-import { generateSignature } from 'irsmarket-sdk';
+import { generateSignature } from 'irsmarket-sdk-js';
 
 const sign = generateSignature(
   'api_key',
@@ -339,7 +339,7 @@ const sign = generateSignature(
 ### Error Handling
 
 ```javascript
-import { IRSMarketError } from 'irsmarket-sdk';
+import { IRSMarketError } from 'irsmarket-sdk-js';
 
 try {
   await client.transaction(...);
@@ -356,7 +356,7 @@ try {
 
 ```javascript
 import express from 'express';
-import { IRSMarketClient, WebhookHandler, createWebhookMiddleware } from 'irsmarket-sdk';
+import { IRSMarketClient, WebhookHandler, createWebhookMiddleware } from 'irsmarket-sdk-js';
 
 const app = express();
 app.use(express.json());

@@ -13,8 +13,8 @@ Terima kasih telah tertarik untuk berkontribusi! Panduan ini akan membantu Anda.
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/irsmarket-sdk.git
-cd irsmarket-sdk
+git clone https://github.com/OneNc/irsmarket-sdk-js.git
+cd irsmarket-sdk-js
 
 # Install dependencies
 npm install

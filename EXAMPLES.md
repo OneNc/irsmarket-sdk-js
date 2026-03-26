@@ -348,7 +348,7 @@ txnManager.on('failed', (payload) => {
 ### Detailed Error Handling
 
 ```javascript
-import { IRSMarketError, IRSMarketClient } from 'irsmarket-sdk';
+import { IRSMarketError, IRSMarketClient } from 'irsmarket-sdk-js';
 
 async function handleTransaction() {
   try {

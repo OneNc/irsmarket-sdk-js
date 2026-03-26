@@ -117,6 +117,6 @@ This project follows [Semantic Versioning](https://semver.org/):
 ## Support
 
 For issues and questions:
-- GitHub Issues: https://github.com/yourusername/irsmarket-sdk/issues
+- GitHub Issues: https://github.com/OneNc/irsmarket-sdk-js/issues
 - IRSMarket Support: https://irsmarket.com
 - Email: api-support@aviana.co.id

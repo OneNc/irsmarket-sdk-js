@@ -19,6 +19,7 @@ build/
 .vscode/
 !.vscode/extensions.json
 .idea/
+.github/copilot-instructions.md
 *.swp
 *.swo
 *~
